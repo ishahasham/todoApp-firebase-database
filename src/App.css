@@ -1,0 +1,95 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.main{
+  background: #0D1117;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 450px;
+}
+.inp1{
+  outline: none;
+  background: none;
+  border: 1px solid #8a6c0b;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+  height: 35px;
+}
+.inp1::placeholder {
+  color: #ffffff4d;
+}
+.todo-btn{
+  background: #8a6c0b;
+  cursor: pointer;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 0.55rem;
+}
+
+.todo-btn1{
+  background: #8a6c0b;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 0.55rem;
+}
+
+
+.todos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8a6c0b;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.edit-icon, .delete-icon{
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 2rem; /* Reduce margin on smaller screens */
+    padding: 1rem;
+    width: 100%;
+    max-width: none; /* Allow full width */
+  }
+
+  .inp1 {
+    width: 100%;
+  }
+  
+  .todo-btn1 {
+    font-size: 12px; 
+    margin-bottom: 20px;
+  }
+
+  
+}
